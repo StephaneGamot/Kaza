@@ -33,6 +33,10 @@
 	justify-content: space-between;
 	margin-top: 24px;
 }
+.Location-DropDown-space-between li  {
+	display: flex;
+	justify-content: left;
+}
 .Location-main h1,
 .Location-main h2 {
 	font-style: normal;
@@ -169,6 +173,17 @@ button {
 .Stars-Name-Pic {
 	display: none;
 }
+.desktopVersion {
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobileVersion {
+    display: none;
+}
+
 @keyframes spinner {
 	0% {
 		transform: rotate(0deg);
@@ -230,7 +245,7 @@ button {
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
-		width: 135px;
+		width: 135px !important;
 	}
 
 	.Location-Rate-Desktop {
@@ -245,6 +260,17 @@ button {
 	.Location-DropDown-space-between {
 		display: block;
 	}
+	.mobileVersion {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.desktopVersion {
+		display: none;
+	}
+	
 }
 
 @media only screen and (max-width: 500px) {

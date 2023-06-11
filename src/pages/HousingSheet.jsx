@@ -33,7 +33,7 @@ export default function HousingSheet() {
 
 			<div className="titre-PicFace">
 				<h1>{flat.title}</h1>
-				<Avatar name={flat.host.name} picture={flat.host.picture} key={flat.host.name} />
+				<Avatar className="desktopVersion" name={flat.host.name} picture={flat.host.picture} key={flat.host.name} />
 			</div>
 
 			<h2>{flat.location}</h2>
@@ -56,7 +56,7 @@ export default function HousingSheet() {
 					<StarRating starValue={flat.rating} key={flat.rating + id} id={flat.id} />
 				</div>{" "}
 				<div className="Location-Avatar-container">
-					<Avatar name={flat.host.name} picture={flat.host.picture} key={flat.host.name} />
+					<Avatar className="mobileVersion" name={flat.host.name} picture={flat.host.picture} key={flat.host.name} />
 				</div>
 			</div>
 
